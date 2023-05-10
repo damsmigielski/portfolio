@@ -1,0 +1,168 @@
+body {
+  display: flex;
+}
+.wrapper {
+  /* background-color: aquamarine; */
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-inline: auto;
+}
+
+.left {
+  /* width: 800px;
+  height: 620px; */
+  display: grid;
+  margin: 0px, 0px, 0px, 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  color: yellow;
+  list-style: none;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.right {
+  width: 800px;
+  height: 620px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zdjecie {
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.zdjecie:hover {
+  position: relative;
+  cursor: url(./cursor.png) 30 30, pointer;
+}
+
+.left_txt {
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  margin: 0px 0px 0px 0px;
+  justify-content: left;
+  align-items: end;
+  display: flex;
+}
+.left_txt:hover {
+  position: relative;
+  cursor: url(./cursor.png) 30 30, pointer;
+  z-index: -1;
+}
+
+.down_txt {
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  margin: 88px 20px 20px 0px;
+  grid-column: 1 / 3;
+  grid-row: 5 / 5;
+  justify-content: space-between;
+  display: flex;
+}
+.right_txt {
+  color: black;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 2.6em;
+  margin: -11px 0px 0px 0px;
+  position: static;
+  display: flex;
+}
+p {
+  /* position: relative;
+        justify-content: space-between; */
+  /* font-size: 16px;
+                line-height: 1.5; */
+}
+
+p:hover {
+  position: relative;
+  cursor: url(./cursor.png) 30 30, pointer;
+  z-index: -1;
+}
+*/ #text-container {
+  position: relative;
+  padding: 20px;
+}
+#text-container:hover .cursor {
+  display: block;
+}
+#cursor {
+  position: relative;
+  cursor: url(./cursor.png) 30 30, pointer;
+  z-index: 0;
+}
+div {
+  display: grid;
+  justify-content: space-between;
+}
+
+#myImage {
+  width: 200px;
+  overflow: hidden;
+  /* padding-top: 200px; */
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  justify-content: space-between;
+  max-width: 80%;
+  max-height: 100%;
+}
+
+a {
+  list-style: none;
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a:hover {
+  position: relative;
+  cursor: url(./cursor.png) 30 30, pointer;
+  z-index: -1;
+}
+
+#vimeo {
+  grid-column: 2 / 4;
+  grid-row: 6 / 5;
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  align-items: end;
+  display: flex;
+  margin-bottom: -5px;
+}
+
+#ig {
+  grid-column: 3 / 4;
+  grid-row: 6 / 5;
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  margin-bottom: -5px;
+  align-items: end;
+  display: flex;
+}
+
+#mail {
+  grid-column: 4 / 4;
+  grid-row: 6 / 5;
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  margin-bottom: -5px;
+  align-items: end;
+  display: flex;
+}
+
+span {
+  color: #ba9d89;
+  font-family: "PT Mono", monospace;
+  grid-template-columns: auto;
+}
